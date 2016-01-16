@@ -2,7 +2,7 @@
  * Created by nana on 2016/1/15.
  */
 define(function(require, exports, module){
-  //  var socket = require('io')();
+/*    var socket = require('io')();
     var $map = require('./$map');
 
 
@@ -38,5 +38,12 @@ define(function(require, exports, module){
 
     module.exports = {
         'init' : init
-    }
+    }*/
+
+
+    var config = require('config');
+    var utils = require('utils');
+
+    utils.loadPage(config.firstPage);
+
 });

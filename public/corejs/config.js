@@ -4,7 +4,8 @@
 define(function(require, exports, module){
 
     module.exports = {
-        'firstPage' : ''
+        'baseIndex' : 'business',
+        'firstPage' : 'login'
     };
 
 });
