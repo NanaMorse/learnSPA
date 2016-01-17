@@ -44,6 +44,15 @@ define(function(require, exports, module){
     var config = require('config');
     var utils = require('utils');
 
+    // 设置ajax服务别名
+    seajs.config({
+        'alias' : {
+            'service' : config.baseIndex + '/service/service'
+        }
+    });
+
+    //todo 在此处绑定hashchange事件，并设置当前页的hash
+
     utils.loadPage(config.firstPage);
 
 });

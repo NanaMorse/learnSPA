@@ -5,7 +5,9 @@ define(function(require, exports, module){
 
     module.exports = {
         'baseIndex' : 'business',
-        'firstPage' : 'login'
+        'firstPage' : 'login',
+        //todo 如何阻止其它链接访问本服务器？
+        'serverPath' : 'http://localhost:8888/'
     };
 
 });
